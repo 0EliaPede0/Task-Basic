@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G05S3vRIKZ0MNP8/f+9Y8/xMRsSSF496TG73rMLvUKI=",
+  "Hash": "B4zxNOXPOzkg1Odg82fmWZLzcU+OgefZaR0F67p/3yA=",
   "Source": "Bangladino",
   "BasePath": "_content/Bangladino",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\peddy\\source\\repos\\Bangladino\\Bangladino\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bangladino.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\peddy\\source\\repos\\Bangladino\\Bangladino\\wwwroot\\css\\IMG\\Donuts.png",
+      "SourceId": "Bangladino",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\peddy\\source\\repos\\Bangladino\\Bangladino\\wwwroot\\",
+      "BasePath": "_content/Bangladino",
+      "RelativePath": "css/IMG/Donuts.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\IMG\\Donuts.png"
+    },
+    {
       "Identity": "C:\\Users\\peddy\\source\\repos\\Bangladino\\Bangladino\\wwwroot\\css\\site.css",
       "SourceId": "Bangladino",
       "SourceType": "Discovered",
@@ -68,12 +85,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\peddy\\source\\repos\\Bangladino\\Bangladino\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\peddy\\source\\repos\\Bangladino\\Bangladino\\wwwroot\\favicon_pede.ico",
       "SourceId": "Bangladino",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\peddy\\source\\repos\\Bangladino\\Bangladino\\wwwroot\\",
       "BasePath": "_content/Bangladino",
-      "RelativePath": "favicon.ico",
+      "RelativePath": "favicon_pede.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +99,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon_pede.ico"
     },
     {
       "Identity": "C:\\Users\\peddy\\source\\repos\\Bangladino\\Bangladino\\wwwroot\\js\\site.js",

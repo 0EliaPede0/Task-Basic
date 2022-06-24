@@ -24,10 +24,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Testo)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Modifica</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Cancella</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Visualizzazione dettagliata</a> 
+            <td style="text-align:right">
+                <a asp-action="Edit" asp-route-id="@item.Id" class="button button1"> Modifica</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="button button2">Cancella</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" class="button button3">Visualizzazione dettagliata</a> 
                 
             </td>
         </tr>
