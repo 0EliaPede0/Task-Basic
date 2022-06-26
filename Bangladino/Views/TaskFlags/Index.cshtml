@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Bangladino.Models.TaskFlag>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Testo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flag)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+
+                @if (item.Flag == true)
+                    {
+                       <form asp-action="Edit2" asp-route-id="@item.Id">
+                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                         <input type="hidden" asp-for="@item.Id" />
+                         <div class="form-group">
+                         <input type="submit" value="Change True/False" class="btn btn-primary" id="@item.Id" hidden/>
+                         <input type="checkbox" checked id="none" onclick="myFunction(@item.Id)">
+                         </div>
+                      </form>
+
+                    }
+                    else
+                    {
+                       <form asp-action="Edit2" asp-route-id="@item.Id">
+                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                         <input type="hidden" asp-for="@item.Id" />
+                         <div class="form-group">
+                         <input type="submit" value="Change True/False" class="btn btn-primary" id="@item.Id" hidden/>
+                         <input type="checkbox" id="none" onclick="myFunction(@item.Id)">
+                         </div>
+                      </form>
+                    }
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Testo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+
+@* First test implemented to overwrite its self
+            <form asp-action="Edit2" asp-route-id="@item.Id">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="@item.Id" />
+            <div class="form-group">
+               <input type="submit" value="Change True/False" class="btn btn-primary" id="@item.Id" hidden/>
+               <input type="checkbox" id="none" onclick="myFunction(@item.Id)">
+            </div>
+        </form>
+*@
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
